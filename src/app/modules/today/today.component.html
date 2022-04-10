@@ -1,9 +1,22 @@
-<div class="container" style="margin-top: 1px;text-align: -webkit-center;">    
+
+
+<h1 style="font-size: 27px; font-weight: 500;"> Today
+  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" style="display: inline-block; margin-left: 0.3px; margin-bottom: -2.5px;" class="bi bi-card-checklist" viewBox="0 0 16 16">
+    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+    <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+</svg>
+</h1>
+
+
+
+
+<br>
+
+<div class="container" style="margin-top: -16px;text-align: -webkit-center;">    
     <div style="width: 90%; text-align: -webkit-center; float: left;">    
 
 
-  <!-- This is panel Body -->  
-  <div class="panel-body" style="text-align: -webkit-center;">  
+  <div class="panel-body" style="font-size: 18px; font-weight: 600; text-align: -webkit-center;">  
     <div *ngFor="let data of myItems;let i= index" class="alert alert-info" style="margin-left: -20px; float: left; width: 100%; min-width: 85%; max-width: 100%; color: #ffffffe0; background-color: #5800cbe0;; border-color: #410095e0; box-shadow: 1px 1px 5px rgba(1, 1, 1, 0.474);">  
       {{data.Value}}  
       <a  (click)="DeleteItem(i)" style="float: right;">  
@@ -14,26 +27,20 @@
       </a>  
     </div>  
     <div *ngIf="myItems.length == 0" class="alert alert-info" style="width: 50%;">  
-      Items Are Empty !!!  
+      Items Are Empty!
     </div>  
   </div>  
 
       
-      
-<!-- This is panel footer -->      
-<div class="panel-footer">      
-    <div class="form-group">      
-      <!-- Form that gets user input -->      
+          
+<div>           
       <form name="itemForm">      
-        <input id="Value" name="Value" required [(ngModel)]="newItem.Value" minlength="3" maxlength="10" style="width: 50%;" placeholder="Enter Any Item"      
+        <input id="Value" name="Value" required [(ngModel)]="newItem.Value" minlength="3" maxlength="10" style="width: 50%;" placeholder="Enter Any Food"      
           class="form-control">      
       </form>      
-      <br>      
-      <!-- Add button to add record -->      
+      <br>        
       <button type="submit" (click)="AddItem()" [disabled]="IsForUpdate == true" class="btn btn-default" style="margin-right: 10px;">Add</button>      
-<!-- Update button to submit updated value -->    
-<button type="submit" (click)="UpdateItem()" [disabled]="IsForUpdate == false" class="btn btn-default">Update</button> 
-    </div>      
+      <button type="submit" (click)="UpdateItem()" [disabled]="IsForUpdate == false" class="btn btn-default">Update</button>     
   </div> 
       
     </div>    

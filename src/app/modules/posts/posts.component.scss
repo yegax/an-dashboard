@@ -1,3 +1,5 @@
+
+
 .content {
     display: flex;
     flex-direction: column;
@@ -82,7 +84,7 @@
     float: left;
     min-width: 30%;
     max-width: 70%;
-    height: 35px;
+    height: 38px;
     position: relative;
     color: rgba(255, 255, 255, 0.82);
     box-shadow: 2px 2px 8px rgba(36, 36, 36, 0.4);
@@ -93,7 +95,7 @@
   .card.highlight-card:hover{
     background-color: rgba(101, 11, 219, 0.886);
     transition: 0.4s;
-    transform: scale(1.02);
+    transform: scale(1.01);
 
   }
 
