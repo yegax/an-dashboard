@@ -82,10 +82,11 @@
     float: left;
     min-width: 30%;
     max-width: 70%;
+    height: 35px;
     position: relative;
     color: rgba(255, 255, 255, 0.82);
     box-shadow: 2px 2px 8px rgba(36, 36, 36, 0.4);
-    border-radius: 12px;
+    border-radius: 5px;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
   }
