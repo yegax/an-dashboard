@@ -1,0 +1,109 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 82px;
+    width: 117%;
+    padding: 0 16px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  svg.material-icons {
+    height: 24px;
+    width: auto;
+  }
+
+  svg.material-icons:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .card svg.material-icons path {
+    fill: #888;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .card {
+    all: unset;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 40px;
+    width: 200px;
+    margin: 0 8px 18px;
+    padding: 85px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+  }
+
+  .card-container .card:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .card.card-small {
+    height: 16px;
+    width: 168px;
+  }
+  .card.card-medium {
+    height: 50px;
+    width: 168px;
+  }
+
+  .card-container .card:not(.highlight-card) {
+    cursor: pointer;
+  }
+
+  .card-container .card:not(.highlight-card):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  }
+
+  .card-container .card:not(.highlight-card):hover .material-icons path {
+    fill: rgb(105, 103, 103);
+  }
+
+  .card.highlight-card {
+    background-color: #5800cbe0;
+    font-weight: 400;
+    border: none;
+    width: auto;
+    float: left;
+    min-width: 30%;
+    max-width: 70%;
+    position: relative;
+    color: rgba(255, 255, 255, 0.82);
+    box-shadow: 2px 2px 8px rgba(36, 36, 36, 0.4);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  .card.highlight-card:hover{
+    background-color: rgba(101, 11, 219, 0.886);
+    transition: 0.4s;
+    transform: scale(1.02);
+
+  }
+
+  .card.card.highlight-card span {
+    margin-left: 60px;
+  }
+
+  .float-left{
+      float: left;
+  }
+
+  .mr-6{
+      margin-right: 26px;
+  }
